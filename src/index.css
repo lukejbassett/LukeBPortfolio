@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --accent: #4fe67c;
+  --accent-hover: #4fe67ca4;
+  --white: #ebeeff;
+  --black: #1c1c16;
+  --black-hover: #1d1d1d;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  transition: background-color 0.5 ease, color 0.5s ease;
+}
