@@ -10,17 +10,17 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="sticky top-0 z-100 dark:bg-[var(--black)] transition-colors duration-250">
+    <header id="navbar" className="sticky top-0 z-100 dark:bg-[var(--black)] transition-colors duration-250">
       <nav className="max-w-7xl mx-auto flex justify-between items-center py-4 px-8">
         <a href="" className="z-100">
           <Link to="/">
             <img
-              src="./src/components/img/logo-darkmode.png"
+              src="./src/components/img/logo-lightmode.png"
               alt=""
               className="w-30 h-auto block dark:hidden transition-opacity duration-250 ease-in-out hover:opacity-60"
             />
             <img
-              src="./src/components/img/logo-lightmode.png"
+              src="./src/components/img/logo-darkmode.png"
               alt=""
               className="w-30 h-auto hidden dark:block transition-opacity duration-250 ease-in-out hover:opacity-75"
             />

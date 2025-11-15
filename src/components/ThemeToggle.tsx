@@ -11,7 +11,7 @@ export default function ThemeToggle() {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
     localStorage.setItem("theme", newTheme);
     setTip(true);
-    setTimeout(() => setTip(false), 1500);
+    setTimeout(() => setTip(false), 2000);
   };
 
   useEffect(() => {
@@ -30,8 +30,11 @@ export default function ThemeToggle() {
           {theme === "light" ? <Moon /> : <Sun />}
         </button>
         {showTip && (
-          <div className="absolute left-1/2 text-center transform -translate-x-1/2 mt-6 px-3 py-1 rounded-md shadow-lg">
-            {theme === "light" ? "Bright Mode" : "Dark Mode"}
+          <div
+            className="text-white bg-(--black) absolute left-1/2 text-center transform -translate-x-1/2 mt-4 px-3 py-1 rounded-md shadow-lg
+          dark:bg-[var(--white)] dark:text-[var(--black)]"
+          >
+            {theme === "light" ? "Light Mode" : "Dark Mode"}
           </div>
         )}
       </div>
