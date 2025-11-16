@@ -10,22 +10,23 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header id="navbar" className="sticky top-0 z-100 dark:bg-[var(--black)] transition-colors duration-250">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center py-4 px-8">
-        <a href="" className="z-100">
-          <Link to="/">
-            <img
-              src="./src/components/img/logo-lightmode.png"
-              alt=""
-              className="w-30 h-auto block dark:hidden transition-opacity duration-250 ease-in-out hover:opacity-60"
-            />
-            <img
-              src="./src/components/img/logo-darkmode.png"
-              alt=""
-              className="w-30 h-auto hidden dark:block transition-opacity duration-250 ease-in-out hover:opacity-75"
-            />
-          </Link>
-        </a>
+    <header
+      id="navbar"
+      className="sticky top-0 z-100 bg-(--white) dark:bg-[var(--black)] transition-colors duration-250"
+    >
+      <nav className="web-width mx-auto flex justify-between items-center py-4 px-4">
+        <Link to="/">
+          <img
+            src="./src/components/img/logo-lightmode.png"
+            alt=""
+            className="w-30 h-auto block dark:hidden transition-opacity duration-250 ease-in-out hover:opacity-60"
+          />
+          <img
+            src="./src/components/img/logo-darkmode.png"
+            alt=""
+            className="w-30 h-auto hidden dark:block transition-opacity duration-250 ease-in-out hover:opacity-75"
+          />
+        </Link>
 
         {/* desktop */}
         <ul className="hidden md:flex">

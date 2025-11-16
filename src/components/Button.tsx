@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+interface ButtonProps {
+  text: string;
+  href: string;
+}
 
-const Button = ({ text, href }) => {
+const Button = ({ text, href }: ButtonProps) => {
   return (
     <a
       href={href}
@@ -12,6 +15,7 @@ const Button = ({ text, href }) => {
       hover:-translate-y-0.5 active:translate-y-0.5
       hover:shadow-lg
       hover:opacity-75
+      dark:text-[var(--black)]
       "
     >
       {text}

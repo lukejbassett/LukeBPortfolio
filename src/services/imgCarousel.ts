@@ -1,0 +1,10 @@
+export { default as Css } from "../pages/img/css.png";
+export { default as Figma } from "../pages/img/figma.png";
+export { default as Html } from "../pages/img/html.png";
+export { default as Js } from "../pages/img/javascript.png";
+export { default as Njs } from "../pages/img/nodejs.png";
+export { default as Npm } from "../pages/img/npm.png";
+export { default as Php } from "../pages/img/php.png";
+export { default as Ps } from "../pages/img/ps.png";
+export { default as React } from "../pages/img/react.png";
+export { default as Vsc } from "../pages/img/vsc.png";
